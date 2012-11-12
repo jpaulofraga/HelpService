@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: MyString
+  idCliente: MyString
+  idEquipamento: MyString
+  codServ: MyString
+  dtEntrada: MyString
+  dtEntrega: MyString
+
+two:
+  id: MyString
+  idCliente: MyString
+  idEquipamento: MyString
+  codServ: MyString
+  dtEntrada: MyString
+  dtEntrega: MyString

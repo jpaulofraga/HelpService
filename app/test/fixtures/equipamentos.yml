@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: MyString
+  descricao: MyString
+  voltagem: MyString
+  modelo: MyString
+  marca: MyString
+
+two:
+  id: MyString
+  descricao: MyString
+  voltagem: MyString
+  modelo: MyString
+  marca: MyString

@@ -1,0 +1,37 @@
+<%= form_for(@equipamento) do |f| %>
+  <% if @equipamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@equipamento.errors.count, "error") %> prohibited this equipamento from being saved:</h2>
+
+      <ul>
+      <% @equipamento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :voltagem %><br />
+    <%= f.text_field :voltagem %>
+  </div>
+  <div class="field">
+    <%= f.label :modelo %><br />
+    <%= f.text_field :modelo %>
+  </div>
+  <div class="field">
+    <%= f.label :marca %><br />
+    <%= f.text_field :marca %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

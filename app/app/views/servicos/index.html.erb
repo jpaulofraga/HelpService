@@ -1,0 +1,33 @@
+<h1>Listing servicos</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Idcliente</th>
+    <th>Idequipamento</th>
+    <th>Codserv</th>
+    <th>Dtentrada</th>
+    <th>Dtentrega</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @servicos.each do |servico| %>
+  <tr>
+    <td><%= servico.id %></td>
+    <td><%= servico.idCliente %></td>
+    <td><%= servico.idEquipamento %></td>
+    <td><%= servico.codServ %></td>
+    <td><%= servico.dtEntrada %></td>
+    <td><%= servico.dtEntrega %></td>
+    <td><%= link_to 'Show', servico %></td>
+    <td><%= link_to 'Edit', edit_servico_path(servico) %></td>
+    <td><%= link_to 'Destroy', servico, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Servico', new_servico_path %>
