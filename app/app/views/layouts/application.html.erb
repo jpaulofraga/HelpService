@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>App</title>
+  <title>Sistema HelpService</title>
+  <!--
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/style.css"/>
+  -->
+  
+  
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %> 
 </head>
 <body>
+	
+	<!-- Div Principal -->
+	<div id="principal">
+	
+		<div id="topo">
+			<h1>Sistema HelpService</h1>
+		</div>
+		
+		<div id="menu">
+			<br>
+			<br>
+			<h4>Menu</h4>
+			<nav>
+			<img alt="imagem" src="/assets/note_add.png"> <a href="/clientes">Cadastro Cliente</a> <br>
+				<img alt="imagem" src="/assets/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a> <br>
+				<img alt="imagem" src="/assets/table.png"> <a href="/servicos">Cadastro Servi�o</a> <br>
+				<img alt="imagem" src="/assets/table.png"> <a href="www.google.com.br">Lista Cliente</a> <br>
+				<img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br>Lista Equipamento</a> <br>
+				<img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br">Lista Servi�os</a> <br>
+			</nav>
+		
+		</div>
 
-<%= yield %>
+		<!-- Div Conte�do -->
+		<div id="conteudo">
+			<%= yield %>
+		</div>
+	
+		<!-- Div Rodap� -->
+		<div id="rodape">
+			<h5>Trabalho G2 Programa��o WEB</h5>
+		</div>
+	</div>
 
 </body>
 </html>

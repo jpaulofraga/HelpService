@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+	<title>Sistema HelpServie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+  </head>
+  <body>
+    
+	<!-- Div Principal -->
+	<div id="principal">
+	
+		<div id="topo">
+			<h1>Sistema HelpService</h1>
+		</div>
+		
+		<div id="menu">
+			<br>
+			<br>
+			<h4>Menu</h4>
+			<nav>
+				<img alt="imagem" src="imagens/note_add.png"> <a href="/clientes">Cadastro Cliente</a> <br>
+				<img alt="imagem" src="imagens/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a> <br>
+				<img alt="imagem" src="imagens/table.png"> <a href="/servicos">Cadastro Servi�o</a> <br>
+				<img alt="imagem" src="imagens/table.png"> <a href="www.google.com.br">Lista Cliente</a> <br>
+				<img alt="imagem" src="imagens/wrench.png"> <a href="www.google.com.br>Lista Equipamento</a> <br>
+				<img alt="imagem" src="imagens/wrench.png"> <a href="www.google.com.br">Lista Servi�os</a> <br>
+			</nav>
+		
+		</div>
+
+		<!-- Div Conte�do -->
+		<div id="conteudo">
+			<h2> Aqui vai o conte�do </h2>
+		</div>
+	
+		<!-- Div Rodap� -->
+		<div id="rodape">
+			<h5>Trabalho G2 Programa��o WEB</h5>
+		</div>
+	</div>
+	
+  </body>
+</html>
