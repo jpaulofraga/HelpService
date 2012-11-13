@@ -3,27 +3,26 @@
 <table>
   <tr>
     <th>Id</th>
-    <th>Idcliente</th>
-    <th>Idequipamento</th>
-    <th>Codserv</th>
-    <th>Dtentrada</th>
-    <th>Dtentrega</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Cliente</th>
+    <th>Equipamento</th>
+    <th>Cod. Serviço</th>
+    <th>Data Entrada</th>
+    <th>Data Entrega</th>
+    <th align="center">Ação</th>
+
   </tr>
 
 <% @servicos.each do |servico| %>
   <tr>
     <td><%= servico.id %></td>
-    <td><%= servico.idCliente %></td>
-    <td><%= servico.idEquipamento %></td>
+    <td><%= servico.cliente.nome%></td>
+    <td><%= servico.equipamento.descricao %></td>
     <td><%= servico.codServ %></td>
     <td><%= servico.dtEntrada %></td>
     <td><%= servico.dtEntrega %></td>
-    <td><%= link_to 'Show', servico %></td>
-    <td><%= link_to 'Edit', edit_servico_path(servico) %></td>
-    <td><%= link_to 'Destroy', servico, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td align="center"><%= link_to 'Listar', servico %>
+    	<%= link_to 'Editar', edit_servico_path(servico) %>
+    	<%= link_to 'Deletar', servico, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %></td>
   </tr>
 <% end %>
 </table>

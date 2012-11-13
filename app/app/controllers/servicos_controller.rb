@@ -25,9 +25,6 @@ class ServicosController < ApplicationController
   # GET /servicos/new.json
   def new
     @servico = Servico.new
-    
-    @clientes = Cliente.all
-   # @item = Item.new
 
     respond_to do |format|
       format.html # new.html.erb
