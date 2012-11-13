@@ -10,31 +10,39 @@
       </ul>
     </div>
   <% end %>
+  
+  <table cellpadding=0 cellspacing=0>
+    <tr  bgcolor="E6F3FF">
 
-  <div class="field">
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :idCliente %><br />
-    <%= f.text_field :idCliente %>
-  </div>
-  <div class="field">
-    <%= f.label :idEquipamento %><br />
-    <%= f.text_field :idEquipamento %>
-  </div>
-  <div class="field">
-    <%= f.label :codServ %><br />
-    <%= f.text_field :codServ %>
-  </div>
-  <div class="field">
-    <%= f.label :dtEntrada %><br />
-    <%= f.text_field :dtEntrada %>
-  </div>
-  <div class="field">
-    <%= f.label :dtEntrega %><br />
-    <%= f.text_field :dtEntrega %>
-  </div>
+    </tr>
+	<tr>
+    	<td>ID: </td>
+    	<td><%= f.text_field :id, :readonly => true %></td>
+    </tr>
+	<tr>
+    	<td>Cliente: </td>
+    	<td><%= select("servico", "idCliente", Cliente.find(:all).collect{ |c| [ c.nome, c.id]})%></td>
+    </tr>
+	<tr>
+    	<td>Equipamento: </td>
+    	<td><%= select("servico", "idEquipamento", Equipamento.find(:all).collect{ |c| [ c.descricao, c.id]})%></td>
+    </tr>
+	<tr>
+    	<td>Cod. Serviço: </td>
+    	<td><%= f.text_field :codServ %></td>
+    </tr>
+	<tr>
+    	<td>Data Entrada: </td>
+    	<td><%= f.text_field :dtEntrada %></td>
+    </tr>
+	<tr>
+    	<td>Data Entrega: </td>
+    	<td><%= f.text_field :dtEntrega %></td>
+    </tr>
+  </table>
+				
+  <br/>
+  <hr size="1">
   <div class="actions">
     <%= f.submit %>
   </div>

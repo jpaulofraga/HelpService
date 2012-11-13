@@ -11,8 +11,8 @@
     </tr>
   <tr bgcolor="E6F3FF">
     <th align="center">Id</th>
-    <th align="center">Endereco</th>
     <th align="center">Nome</th>
+	<th align="center">Endereco</th>
     <th align="center">Telefone</th>
     <th align="center">Acao</th>
   
@@ -21,8 +21,8 @@
 <% @clientes.each do |cliente| %>
   <tr class="<%= cycle("even", "odd") %>">
     <td align="center"><%= cliente.id %></td>
+	<td align="center"><%= cliente.nome %></td>
     <td align="center"><%= cliente.endereco %></td>
-    <td align="center"><%= cliente.nome %></td>
     <td align="center"><%= cliente.telefone %></td>
     <td align="center"><%= link_to 'Listar', cliente %>
     	<%= link_to 'Editar', edit_cliente_path(cliente) %>
@@ -33,5 +33,5 @@
 </table>
 
 <br />
-
+<hr size="1">
 <%= link_to 'Novo Cliente', new_cliente_path %>
