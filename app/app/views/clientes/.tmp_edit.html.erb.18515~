@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<!-- <%= link_to 'Listar', @cliente %> | -->
+<%= link_to 'Listar', @cliente %> |
 <%= link_to 'Voltar', clientes_path %>

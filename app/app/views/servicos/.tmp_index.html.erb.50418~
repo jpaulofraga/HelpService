@@ -21,17 +21,15 @@
 
 <% @servicos.each do |servico| %>
   <tr class="<%= cycle("even", "odd") %>">
-    <td align="center"><%= servico.id %></td>
-    <td align="center"><%= servico.cliente.nome%></td>
-    <td align="center"><%= servico.equipamento.descricao %></td>
-    <td align="center"><%= servico.codServ %></td>
-    <td align="center"><%= servico.dtEntrada %></td>
-    <td align="center"><%= servico.dtEntrega %></td>
-    <td align="center">
-    <!--	<%= link_to 'Listar', servico %>	-->
+    <td><%= servico.id %></td>
+    <td><%= servico.cliente.nome%></td>
+    <td><%= servico.equipamento.descricao %></td>
+    <td><%= servico.codServ %></td>
+    <td><%= servico.dtEntrada %></td>
+    <td><%= servico.dtEntrega %></td>
+    <td align="center"><%= link_to 'Listar', servico %>
     	<%= link_to 'Editar', edit_servico_path(servico) %>
-    	<%= link_to 'Deletar', servico, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
-	</td>
+    	<%= link_to 'Deletar', servico, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %></td>
   </tr>
 <% end %>
 </table>

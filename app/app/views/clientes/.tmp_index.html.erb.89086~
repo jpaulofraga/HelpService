@@ -24,8 +24,7 @@
 	<td align="center"><%= cliente.nome %></td>
     <td align="center"><%= cliente.endereco %></td>
     <td align="center"><%= cliente.telefone %></td>
-    <td align="center">
-    <!--	<%= link_to 'Listar', cliente %>	-->
+    <td align="center"><%= link_to 'Listar', cliente %>
     	<%= link_to 'Editar', edit_cliente_path(cliente) %>
     	<%= link_to 'Deletar', cliente, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
 	</td>

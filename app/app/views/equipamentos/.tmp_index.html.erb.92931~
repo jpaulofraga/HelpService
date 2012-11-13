@@ -19,17 +19,15 @@
   </tr>
 
 <% @equipamentos.each do |equipamento| %>
-  <tr class="<%= cycle("even", "odd") %>">
+  <tr>
     <td align="center"><%= equipamento.id %></td>
     <td align="center"><%= equipamento.descricao %></td>
     <td align="center"><%= equipamento.voltagem %></td>
     <td align="center"><%= equipamento.modelo %></td>
     <td align="center"><%= equipamento.marca %></td>
-    <td align="center">
-    <!--	<%= link_to 'Listar', equipamento %> -->
+    <td align="center"><%= link_to 'Listar', equipamento %>
     	<%= link_to 'Editar', edit_equipamento_path(equipamento) %>
-    	<%= link_to 'Deletar', equipamento, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
-	</td>
+    	<%= link_to 'Deletar', equipamento, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %></td>
   </tr>
 <% end %>
 </table>

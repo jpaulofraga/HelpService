@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<!-- <%= link_to 'Listar', @servico %> | -->
+<%= link_to 'Listar', @servico %> |
 <%= link_to 'Voltar', servicos_path %>

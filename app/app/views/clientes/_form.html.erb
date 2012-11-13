@@ -10,23 +10,32 @@
       </ul>
     </div>
   <% end %>
+  
+  <table cellpadding=0 cellspacing=0>
+    <tr  bgcolor="E6F3FF">
 
-  <div class="field">
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
-    <%= f.label :endereco %><br />
-    <%= f.text_field :endereco %>
-  </div>
-  <div class="field">
-    <%= f.label :telefone %><br />
-    <%= f.text_field :telefone %>
-  </div>
+    </tr>
+	<tr>
+		<td>ID: </td>
+		<td><%= f.text_field :id, :readonly => true %></td>
+	</tr>
+	<tr>
+		<td>Nome: </td>
+		<td><%= f.text_field :nome %></td>
+	</tr>
+	<tr>
+		<td>Endereço: </td>
+		<td><%= f.text_field :endereco %></td>
+	</tr>
+	<tr>
+		<td>Telefone: </td>
+		<td><%= f.text_field :telefone %></td>
+	</tr>
+	
+  </table>
+
+<br/>
+<hr size="1">
   <div class="actions">
     <%= f.submit %>
   </div>

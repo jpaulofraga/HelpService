@@ -10,27 +10,35 @@
       </ul>
     </div>
   <% end %>
+  
+  <table cellpadding=0 cellspacing=0>
+    <tr  bgcolor="E6F3FF">
 
-  <div class="field">
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :descricao %><br />
-    <%= f.text_field :descricao %>
-  </div>
-  <div class="field">
-    <%= f.label :voltagem %><br />
-    <%= f.text_field :voltagem %>
-  </div>
-  <div class="field">
-    <%= f.label :modelo %><br />
-    <%= f.text_field :modelo %>
-  </div>
-  <div class="field">
-    <%= f.label :marca %><br />
-    <%= f.text_field :marca %>
-  </div>
+    </tr>
+	<tr>
+		<td>ID: </td>
+		<td><%= f.text_field :id, :readonly => true %></td>
+	</tr>
+	<tr>
+		<td>Descrição: </td>
+		<td><%= f.text_field :descricao %></td>
+	</tr>
+	<tr>
+		<td>Voltagem: </td>
+		<td><%= f.text_field :voltagem %></td>
+	</tr>
+	<tr>
+		<td>Modelo: </td>
+		<td><%= f.text_field :modelo %></td>
+	</tr>
+	<tr>
+		<td>Marca: </td>
+		<td><%= f.text_field :marca %></td>
+	</tr>
+  </table>
+
+<br/>
+ <hr size="1">
   <div class="actions">
     <%= f.submit %>
   </div>
