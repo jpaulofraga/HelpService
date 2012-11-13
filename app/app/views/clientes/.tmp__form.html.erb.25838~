@@ -16,12 +16,12 @@
     <%= f.text_field :id %>
   </div>
   <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
     <%= f.label :endereco %><br />
     <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
   </div>
   <div class="field">
     <%= f.label :telefone %><br />

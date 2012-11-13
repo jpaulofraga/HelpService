@@ -1,25 +1,33 @@
-<h1>Clientes Cadastrados</h1>
+<!--
 
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Endereco</th>
-    <th>Nome</th>
-    <th>Telefone</th>
-    <th></th>
-    <th></th>
-    <th></th>
+
+<h1>Clientes Cadastrados</h1>
+-->
+<br />
+<table cellpadding=0 cellspacing=0 width="600px">
+	<tr  bgcolor="E6F3FF">
+    				<td></td>
+    				<td>Clientes Cadastrados</td>
+    </tr>
+  <tr bgcolor="E6F3FF">
+    <th align="center">Id</th>
+    <th align="center">Endereco</th>
+    <th align="center">Nome</th>
+    <th align="center">Telefone</th>
+    <th align="center">Acao</th>
+  
   </tr>
 
 <% @clientes.each do |cliente| %>
-  <tr>
-    <td><%= cliente.id %></td>
-    <td><%= cliente.endereco %></td>
-    <td><%= cliente.nome %></td>
-    <td><%= cliente.telefone %></td>
-    <td><%= link_to 'Show', cliente %></td>
-    <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-    <td><%= link_to 'Destroy', cliente, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td align="center"><%= cliente.id %></td>
+    <td align="center"><%= cliente.endereco %></td>
+    <td align="center"><%= cliente.nome %></td>
+    <td align="center"><%= cliente.telefone %></td>
+    <td align="center"><%= link_to 'Listar', cliente %>
+    	<%= link_to 'Editar', edit_cliente_path(cliente) %>
+    	<%= link_to 'Deletar', cliente, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
+	</td>
   </tr>
 <% end %>
 </table>
