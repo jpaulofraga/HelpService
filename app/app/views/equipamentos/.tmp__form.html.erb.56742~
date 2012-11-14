@@ -1,0 +1,45 @@
+<%= form_for(@equipamento) do |f| %>
+  <% if @equipamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@equipamento.errors.count, "error") %> prohibited this equipamento from being saved:</h2>
+
+      <ul>
+      <% @equipamento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <table cellpadding=0 cellspacing=0>
+    <tr  bgcolor="E6F3FF">
+
+    </tr>
+	<tr>
+		<td>ID: </td>
+		<td><%= f.text_field :id, :readonly => true %></td>
+	</tr>
+	<tr>
+		<td>Descrição: </td>
+		<td><%= f.text_field :descricao %></td>
+	</tr>
+	<tr>
+		<td>Voltagem: </td>
+		<td><%= f.text_field :voltagem %></td>
+	</tr>
+	<tr>
+		<td>Modelo: </td>
+		<td><%= f.text_field :modelo %></td>
+	</tr>
+	<tr>
+		<td>Marca: </td>
+		<td><%= f.text_field :marca %></td>
+	</tr>
+  </table>
+
+<br/>
+ <hr size="1">
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -33,11 +33,11 @@
     </tr>
 	<tr>
     	<td>Data Entrada: </td>
-    	<td><%= f.text_field :dtEntrada, :maxlength => "10", :onKeyUp => "barra(this)", :onblur => "validaDat(this,this.value)" %></td>
+    	<td><%= f.text_field :dtEntrada %></td>
     </tr>
 	<tr>
     	<td>Data Entrega: </td>
-    	<td><%= f.text_field :dtEntrega, :maxlength => "10", :onKeyUp => "barra(this)", :onblur => "validaDat(this,this.value)" %></td>
+    	<td><%= f.text_field :dtEntrega %></td>
     </tr>
   </table>
 				
