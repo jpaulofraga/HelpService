@@ -13,7 +13,6 @@
     <th align="center">Id</th>
     <th align="center">Nome</th>
 	<th align="center">Endereco</th>
-	<th align="center">CPF</th>
     <th align="center">Telefone</th>
     <th align="center">Acao</th>
   </tr>
@@ -23,7 +22,6 @@
     <td align="center"><%= cliente.id %></td>
 	<td align="center"><%= cliente.nome %></td>
     <td align="center"><%= cliente.endereco %></td>
-	<td align="center"><%= cliente.cpf %></td>
     <td align="center"><%= cliente.telefone %></td>
     <td align="center">
     <!--	<%= link_to 'Listar', cliente %>	-->

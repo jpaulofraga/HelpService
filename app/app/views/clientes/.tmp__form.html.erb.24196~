@@ -28,12 +28,8 @@
 		<td><%= f.text_field :endereco %></td>
 	</tr>
 	<tr>
-		<td>CPF: </td>
-		<td><%= f.text_field :cpf, :maxlength=>"14", :onkeyup=>"FormataCpf(this,event)"  %></td>
-	</tr>
-	<tr>
 		<td>Telefone: </td>
-		<td><%= f.text_field :telefone, :onkeydown=>"mascTelefone(this)", :onkeyup=>"mascTelefone(this)"%></td>
+		<td><%= f.text_field :telefone %></td>
 	</tr>
 	
   </table>
