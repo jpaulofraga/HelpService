@@ -1,7 +1,9 @@
 App::Application.routes.draw do
   resources :servicos
 
-  resources :equipamentos
+  resources :equipamentos do
+	resources :servicos
+  end
 
   resources :clientes
 
