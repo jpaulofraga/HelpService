@@ -2,4 +2,9 @@ Est
 
 asdfsdfssde é o meu teste do git.
 teste
+<<<<<<< HEAD
 Teste Joao
+=======
+teste Rodrigo
+Teste II Rodrigo
+>>>>>>> 06404317f3c35fc16c73454cad5bed7292803310
