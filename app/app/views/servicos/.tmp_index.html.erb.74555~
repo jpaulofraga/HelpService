@@ -1,0 +1,41 @@
+<!--
+
+<h1>Listing servicos</h1>
+-->
+<br />
+<table cellpadding=0 cellspacing=0 width="600px">
+	<tr  bgcolor="E6F3FF">
+    				<td></td>
+    				<td>Serviços Cadastrados</td>
+    </tr>
+  <tr bgcolor="E6F3FF">
+    <th align="center">ID</th>
+    <th align="center">Cliente</th>
+    <th align="center">Equipamento</th>
+    <th align="center">Cod. Serviço</th>
+    <th align="center">Data Entrada</th>
+    <th align="center">Data Entrega</th>
+    <th align="center">Ação</th>
+
+  </tr>
+
+<% @servicos.each do |servico| %>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td align="center"><%= servico.id %></td>
+    <td align="center"><%= servico.cliente.nome%></td>
+    <td align="center"><%= servico.equipamento.descricao %></td>
+    <td align="center"><%= servico.codServ %></td>
+    <td align="center"><%= servico.dtEntrada %></td>
+    <td align="center"><%= servico.dtEntrega %></td>
+    <td align="center">
+    <!--	<%= link_to 'Listar', servico %>	-->
+    	<%= link_to 'Editar', edit_servico_path(servico) %>
+    	<%= link_to 'Deletar', servico, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
+	</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Servico', new_servico_path %>

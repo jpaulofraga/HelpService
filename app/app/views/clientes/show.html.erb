@@ -1,25 +1,25 @@
-<p id="notice"><%= notice %></p>
+<br>
+<table cellpadding=0 cellspacing=0>
+	<tr  bgcolor="E6F3FF">
+    	<td colspan="2"> <%= notice %> </td>
+    </tr>
+	<tr>
+		<td>Id: </td>
+		<td> <%= @cliente.id %> </td>
+	</tr>
+	<tr>
+		<td>Endereço: </td>
+		<td> <%= @cliente.endereco %> </td>
+	</tr>
+	<tr>
+		<td>Nome: </td>
+		<td> <%= @cliente.nome %> </td>
+	</tr>
+	<tr>
+		<td>Telefone: </td>
+		<td> <%= @cliente.telefone %> </td>
+	</tr>
+</table>
 
-<p>
-  <b>Id:</b>
-  <%= @cliente.id %>
-</p>
-
-<p>
-  <b>Endereco:</b>
-  <%= @cliente.endereco %>
-</p>
-
-<p>
-  <b>Nome:</b>
-  <%= @cliente.nome %>
-</p>
-
-<p>
-  <b>Telefone:</b>
-  <%= @cliente.telefone %>
-</p>
-
-
-<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
-<%= link_to 'Back', clientes_path %>
+<%= link_to 'Editar', edit_cliente_path(@cliente) %> |
+<%= link_to 'Voltar', clientes_path %>

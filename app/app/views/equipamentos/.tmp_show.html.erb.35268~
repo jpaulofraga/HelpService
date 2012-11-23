@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @equipamento.id %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @equipamento.descricao %>
+</p>
+
+<p>
+  <b>Voltagem:</b>
+  <%= @equipamento.voltagem %>
+</p>
+
+<p>
+  <b>Modelo:</b>
+  <%= @equipamento.modelo %>
+</p>
+
+<p>
+  <b>Marca:</b>
+  <%= @equipamento.marca %>
+</p>
+
+
+<%= link_to 'Edit', edit_equipamento_path(@equipamento) %> |
+<%= link_to 'Back', equipamentos_path %>

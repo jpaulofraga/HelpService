@@ -1,35 +1,34 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Id:</b>
-  <%= @servico.id %>
-</p>
-
-<p>
-  <b>Idcliente:</b>
-  <%= @servico.idCliente %>
-</p>
-
-<p>
-  <b>Idequipamento:</b>
-  <%= @servico.idEquipamento %>
-</p>
-
-<p>
-  <b>Codserv:</b>
-  <%= @servico.codServ %>
-</p>
-
-<p>
-  <b>Dtentrada:</b>
-  <%= @servico.dtEntrada %>
-</p>
-
-<p>
-  <b>Dtentrega:</b>
-  <%= @servico.dtEntrega %>
-</p>
-
+<br>
+<table cellpadding=0 cellspacing=0>
+	
+	<tr  bgcolor="E6F3FF">
+    	<td colspan="2"> <%= notice %> </td>
+    </tr>
+	<tr>
+		<td>ID: </td>
+		<td> <%= @servico.id %> </td>
+	</tr>
+	<tr>
+		<td>Cliente: </td>
+		<td> <%= @servico.cliente.nome %> </td>
+	</tr>
+	<tr>
+		<td>Equipamento: </td>
+		<td> <%= @servico.equipamento.descricao %> </td>
+	</tr>
+	<tr>
+		<td>Cod. Servico: </td>
+		<td> <%= @servico.codServ %> </td>
+	</tr>
+	<tr>
+		<td>Data Entrada: </td>
+		<td> <%= @servico.dtEntrada %> </td>
+	</tr>
+	<tr>
+		<td>Data Entrega: </td>
+		<td> <%= @servico.dtEntrega %> </td>
+	</tr>
+</table>
 
 <%= link_to 'Editar', edit_servico_path(@servico) %> |
 <%= link_to 'Voltar', servicos_path %>
