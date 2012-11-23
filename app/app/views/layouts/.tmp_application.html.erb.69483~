@@ -41,7 +41,7 @@
 					<td><img alt="imagem" src="/assets/table.png"> <a href="www.google.com.br">Lista Cliente</a></td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br">Lista Equipamento</a></td>
+					<td><img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br>Lista Equipamento</a></td>
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br">Lista Serviços</a></td>

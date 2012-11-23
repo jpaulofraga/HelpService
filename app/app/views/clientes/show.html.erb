@@ -1,7 +1,7 @@
 <br>
 <table cellpadding=0 cellspacing=0>
 	<tr  bgcolor="E6F3FF">
-    	<td colspan="2"> <%= notice %> </td>
+    	<th colspan="2"> <%= notice %> </th>
     </tr>
 	<tr>
 		<td>Id: </td>
@@ -20,6 +20,6 @@
 		<td> <%= @cliente.telefone %> </td>
 	</tr>
 </table>
-
+<br>
 <%= link_to 'Editar', edit_cliente_path(@cliente) %> |
 <%= link_to 'Voltar', clientes_path %>
