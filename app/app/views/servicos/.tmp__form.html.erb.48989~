@@ -1,0 +1,49 @@
+<%= form_for(@servico) do |f| %>
+  <% if @servico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@servico.errors.count, "error") %> prohibited this servico from being saved:</h2>
+
+      <ul>
+      <% @servico.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <table cellpadding=0 cellspacing=0>
+    <tr  bgcolor="E6F3FF">
+
+    </tr>
+	<tr>
+    	<td>ID: </td>
+    	<td><%= f.text_field :id, :readonly => true %></td>
+    </tr>
+	<tr>
+    	<td>Cliente: </td>
+    	<td><%= select("servico", "idCliente", Cliente.find(:all).collect{ |c| [ c.nome, c.id]})%></td>
+    </tr>
+	<tr>
+    	<td>Equipamento: </td>
+    	<td><%= select("servico", "idEquipamento", Equipamento.find(:all).collect{ |c| [ c.descricao, c.id]})%></td>
+    </tr>
+	<tr>
+    	<td>Cod. Serviço: </td>
+    	<td><%= f.text_field :codServ %></td>
+    </tr>
+	<tr>
+    	<td>Data Entrada: </td>
+    	<td><%= f.text_field :dtEntrada, :maxlength => "10", :onKeyUp => "barra(this)", :onblur => "validaDat(this,this.value)" %></td>
+    </tr>
+	<tr>
+    	<td>Data Entrega: </td>
+    	<td><%= f.text_field :dtEntrega, :maxlength => "10", :onKeyUp => "barra(this)", :onblur => "validaDat(this,this.value)" %></td>
+    </tr>
+  </table>
+				
+  <br/>
+  <hr size="1">
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
