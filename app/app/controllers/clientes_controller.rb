@@ -9,6 +9,18 @@ class ClientesController < ApplicationController
       format.json { render :json => @clientes }
     end
   end
+  
+  
+  def listagem
+    
+    @clientes = Cliente.find(:all)
+    
+    respond_to do |format|
+      format.html # listagem.html.erb
+      format.json { render :json => @clientes }
+    end
+    
+  end
 
   # GET /clientes/1
   # GET /clientes/1.json

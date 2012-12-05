@@ -1,4 +1,9 @@
 App::Application.routes.draw do
+  
+  match "clientes/listagem" => "clientes#listagem"
+  match "servicos/listagem" => "servicos#listagem"
+  match "equipamentos/listagem" => "equipamentos#listagem"
+  
   resources :servicos
 
   resources :equipamentos do
@@ -6,6 +11,8 @@ App::Application.routes.draw do
   end
 
   resources :clientes
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

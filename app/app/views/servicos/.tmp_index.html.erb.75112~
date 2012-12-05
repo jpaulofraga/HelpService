@@ -37,5 +37,4 @@
 
 <br />
 <hr size="1">
-<img alt="imagem" src="/assets/note_add.png"> <%= link_to 'Novo Servico', new_servico_path %> </td>
-
+<%= link_to 'Novo Servico', new_servico_path %>

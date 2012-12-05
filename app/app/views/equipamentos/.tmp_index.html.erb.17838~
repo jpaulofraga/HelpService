@@ -36,5 +36,4 @@
 
 <br />
 <hr size="1">
-<img alt="imagem" src="/assets/note_add.png"> <%= link_to 'Novo Equipamento', new_equipamento_path %> </td>
-
+<%= link_to 'Novo Equipamento', new_equipamento_path %>

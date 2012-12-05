@@ -13,6 +13,17 @@ class ServicosController < ApplicationController
       format.json { render :json => @servicos }
     end
   end
+  
+   def listagem
+    
+    @servicos = Servico.all
+    
+    respond_to do |format|
+      format.html # listagem.html.erb
+      format.json { render :json => @servicos }
+    end
+    
+  end
 
   # GET /servicos/1
   # GET /servicos/1.json

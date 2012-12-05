@@ -9,6 +9,13 @@
 	
 	}
 	
+#divCentralizada {
+        position: absolute;
+
+        left: 20%;
+        top:15%;
+      }
+	
 h1 {
 	margin: 0.8em 0;
 	color:#c30;

@@ -9,6 +9,17 @@ class EquipamentosController < ApplicationController
       format.json { render :json => @equipamentos }
     end
   end
+  
+  def listagem
+    
+    @equipamentos = Equipamento.find(:all)
+    
+    respond_to do |format|
+      format.html # listagem.html.erb
+      format.json { render :json => @equipamentos }
+    end
+    
+  end
 
   # GET /equipamentos/1
   # GET /equipamentos/1.json

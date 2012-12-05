@@ -4,7 +4,7 @@
 <br/>
 <table cellpadding=0 cellspacing=0 width="99%">
 	<tr  bgcolor="E6F3FF">
-    	<th colspan="2"> Equipamentos Cadastrados </th>
+    	<th colspan="2"> Listagem de Equipamentos </th>
     </tr>
   <tr bgcolor="E6F3FF">
     
@@ -13,7 +13,7 @@
     <th align="center">Voltagem</th>
     <th align="center">Modelo</th>
     <th align="center">Marca</th>
-    <th align="center">Ação</th>
+    <th align="center">Serviços</th>
 
   </tr>
 
@@ -27,14 +27,11 @@
     <td align="center">
     <!--	<%= link_to 'Listar', equipamento %> -->
 		<%= link_to 'Serviços', equipamento_path(equipamento)+"/servicos"%>
-    	<%= link_to 'Editar', edit_equipamento_path(equipamento) %>
-    	<%= link_to 'Deletar', equipamento, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
+
 	</td>
   </tr>
 <% end %>
+	<tr  bgcolor="E6F3FF">
+    	<th colspan="6"> Total Registros:  <%= @equipamentos.count %> </th>
+  	</tr>
 </table>
-
-<br />
-<hr size="1">
-<img alt="imagem" src="/assets/note_add.png"> <%= link_to 'Novo Equipamento', new_equipamento_path %> </td>
-

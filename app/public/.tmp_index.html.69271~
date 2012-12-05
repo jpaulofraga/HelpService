@@ -24,9 +24,6 @@
     				<td align="center">Menu</td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="imagens/home.jpg"> <a href="/">Home</a></td>
-				</tr>
-				<tr>
 					<td><img alt="imagem" src="imagens/note_add.png"> <a href="/clientes">Cadastro Cliente</a></td>
 				</tr>
 				<tr>

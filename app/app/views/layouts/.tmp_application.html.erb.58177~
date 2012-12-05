@@ -29,9 +29,6 @@
     				<td align="center">Menu</td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="/assets/home.jpg"> <a href="/">Home</a></td>
-				</tr>
-				<tr>
 					<td><img alt="imagem" src="/assets/note_add.png"> <a href="/clientes">Cadastro Cliente</a></td>
 				</tr>
 				<tr>
@@ -41,13 +38,13 @@
 					<td><img alt="imagem" src="/assets/table.png"> <a href="/servicos">Cadastro Serviço</a></td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="/assets/table.png"> <a href="/clientes/listagem">Listagem Clientes</a></td>
+					<td><img alt="imagem" src="/assets/table.png"> <a href="www.google.com.br">Lista Cliente</a></td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="/assets/wrench.png"> <a href="/equipamentos/listagem">Listagem Equipamentos</a></td>
+					<td><img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br">Lista Equipamento</a></td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="/assets/wrench.png"> <a href="/servicos/listagem">Listagem Serviços</a></td>
+					<td><img alt="imagem" src="/assets/wrench.png"> <a href="www.google.com.br">Lista Serviços</a></td>
 				</tr>
 			</table>
 		
