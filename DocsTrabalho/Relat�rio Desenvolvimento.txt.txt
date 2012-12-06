@@ -1,0 +1,58 @@
+HELPService
+
+O sistema roda em Ruby on Rails com banco de dados SQLite3.
+Possui 3 tabelas relacionados conforme diagrama do banco de dados
+salvo nesta pasta.
+Utilizamos o conceito de MVC onde o sistema é divido em três camadas.
+
+Model - Modelo. Essas classes possuem a lógica de negócios do banco de dados. Executam
+	comandos insert, update, delete e select.
+
+Controller - Controlador. Possui a lógica de negócios do aplicativo. Para cada modelo
+foi criado um controlador.
+
+Views - Telas Html. Através das views é que o usuário fará uso do sistema. Apartir delas
+é possível realizar todas as tarefas disponíveis no controlador.
+
+Para melhorar o layout do aplicativo utilizamos CSS e modificações nos arquivos html
+gerados pelos comandos do Rails.
+O Rails fornece um arquivo html único para layout. As modificações realizadas nele
+serão propagadas para toda a aplicação.
+
+O sistema constitue em:
+
+Cadastro Cliente - Nesta tela é possível visualizar os clientes cadastrados
+bem como cadastrar novos cliente.
+	No campo CPF e Telefone foram criados máscaras para que a inserção ocorre
+de forma correta.
+	Ainda na mesma tela é possível deletar o cadastro de algum cliente ou fazer
+a atualização de algum campo utilizando o link editar.
+
+Cadastro Equipamento - Nesta tela é possível visualizar os registros inseridos de equipamentos e cadastrar novos equipamentos.
+	Possibilidade de atualizar e deletar na mesma tela.
+
+Cadastro Serviço - O cadastro de serviço faz a ligação entre a tabela de clientes e
+a tabela de equipamentos.
+	Cada serviço possui um cliente e um equipamento.
+	Nos campos Data Entrada e Data Entrega foi adicionado uma mascara para que os
+registros sejam inseridos de forma correta.
+	Como nos outros cadastros é possível atualizar e deletar na mesma tela.
+
+Relatórios:
+
+Listagem Cliente - Lista todos os clientes cadastros no banco de dados.
+Listagem Equipamentos - Lista todos os equipamentos cadastrados no banco.
+Listagem Serviços - Lista todos os serviços inseridos.
+
+
+Melhorias:
+	No cadastro do cliente o campo endereço poderia ser substituído por CEP. Ao digitar
+o cep o programa faria uma consulta no webservice dos correios e geraria automáticamente
+o endereço, UF, bairro e País.
+	No equipamento VOLTAGEM, MODELO e MARCA poderia ser substituído por duas tabelas diminuindo a redundância de informação no banco de dados.
+	Inserção de um campo de status (ATIVO/INATIVO).
+	Possibilidade de abrir os serviços relativos aquele equipamento selecionado sem sair da listagem de equipamentos.
+	No cadastro de serviços seria possível criar um teste para que a data de entrada nunca seja menor que a data de entrega.
+	O código do serviço poderia ser gerado de forma automática com a seguinte mascara 00001/12
+	As listagens deveriam possuir a opção de exportar para PDF.
+	
