@@ -1,0 +1,29 @@
+<%= form_for(@tecnico) do |f| %>
+  <% if @tecnico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tecnico.errors.count, "error") %> prohibited this tecnico from being saved:</h2>
+
+      <ul>
+      <% @tecnico.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :registro %><br />
+    <%= f.text_field :registro %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

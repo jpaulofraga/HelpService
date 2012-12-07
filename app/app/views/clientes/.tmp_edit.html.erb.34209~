@@ -1,0 +1,6 @@
+<h1>Editando Cliente</h1>
+
+<%= render 'form' %>
+
+<!-- <%= link_to 'Listar', @cliente %> | -->
+<%= link_to 'Voltar', clientes_path %>

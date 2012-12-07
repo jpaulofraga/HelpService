@@ -24,10 +24,6 @@
     	<td><%= select("servico", "idCliente", Cliente.find(:all).collect{ |c| [ c.nome, c.id]})%></td>
     </tr>
 	<tr>
-    	<td>Téc. Resp.: </td>
-    	<td><%= select("servico", "idTecnico", Tecnico.find(:all).collect{ |c| [ c.nome, c.id]})%></td>
-    </tr>
-	<tr>
     	<td>Equipamento: </td>
     	<td><%= select("servico", "idEquipamento", Equipamento.find(:all).collect{ |c| [ c.descricao, c.id]})%></td>
     </tr>

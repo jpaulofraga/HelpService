@@ -4,6 +4,7 @@ class CreateServicos < ActiveRecord::Migration
       t.string :id
       t.string :idCliente
       t.string :idEquipamento
+      t.string :idTecnico
       t.string :codServ
       t.string :dtEntrada
       t.string :dtEntrega

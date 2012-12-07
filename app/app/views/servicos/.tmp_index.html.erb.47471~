@@ -10,7 +10,6 @@
   <tr bgcolor="E6F3FF">
     <th align="center">ID</th>
     <th align="center">Cliente</th>
-	<th align="center">Téc. Resp.</th>
     <th align="center">Equipamento</th>
     <th align="center">Cod. Serviço</th>
     <th align="center">Data Entrada</th>
@@ -23,7 +22,6 @@
   <tr class="<%= cycle("even", "odd") %>">
     <td align="center"><%= servico.id %></td>
     <td align="center"><%= servico.cliente.nome%></td>
-	<td align="center"><%= servico.tecnico.nome%></td>
     <td align="center"><%= servico.equipamento.descricao %></td>
     <td align="center"><%= servico.codServ %></td>
     <td align="center"><%= servico.dtEntrada %></td>

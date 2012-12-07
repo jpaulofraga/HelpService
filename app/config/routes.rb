@@ -1,10 +1,12 @@
 App::Application.routes.draw do
-  
+
   match "clientes/listagem" => "clientes#listagem"
   match "servicos/listagem" => "servicos#listagem"
   match "equipamentos/listagem" => "equipamentos#listagem"
+  match "tecnicos/listagem" => "tecnicos#listagem"
   
   resources :servicos
+  resources :tecnicos
 
   resources :equipamentos do
 	resources :servicos

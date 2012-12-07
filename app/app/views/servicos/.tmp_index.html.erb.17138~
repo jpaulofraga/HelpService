@@ -23,7 +23,7 @@
   <tr class="<%= cycle("even", "odd") %>">
     <td align="center"><%= servico.id %></td>
     <td align="center"><%= servico.cliente.nome%></td>
-	<td align="center"><%= servico.tecnico.nome%></td>
+	<td align="center"><%= servico.cliente.nome%></td>
     <td align="center"><%= servico.equipamento.descricao %></td>
     <td align="center"><%= servico.codServ %></td>
     <td align="center"><%= servico.dtEntrada %></td>

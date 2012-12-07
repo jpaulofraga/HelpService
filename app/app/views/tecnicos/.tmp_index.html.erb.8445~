@@ -1,0 +1,27 @@
+<h1>Listing tecnicos</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Registro</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tecnicos.each do |tecnico| %>
+  <tr>
+    <td><%= tecnico.id %></td>
+    <td><%= tecnico.nome %></td>
+    <td><%= tecnico.registro %></td>
+    <td><%= link_to 'Show', tecnico %></td>
+    <td><%= link_to 'Edit', edit_tecnico_path(tecnico) %></td>
+    <td><%= link_to 'Destroy', tecnico, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tecnico', new_tecnico_path %>

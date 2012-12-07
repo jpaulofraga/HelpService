@@ -35,7 +35,7 @@
 					<td><img alt="imagem" src="/assets/usuarios.png"> <a href="/clientes">Cadastro Cliente</a></td>
 				</tr>
 				<tr>
-					<td><img alt="imagem" src="/assets/tecnico.png"> <a href="/tecnicos">Cadastro Técnico</a></td>
+					<td><img alt="imagem" src="imagens/tecnico.png"> <a href="/tecnicos">Cadastro Tecnico</a></td>
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a></td>
@@ -45,9 +45,6 @@
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/listagem.png"> <a href="/clientes/listagem">Listagem Clientes</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="/assets/listagem.png"> <a href="/tecnicos/listagem">Listagem Técnicos</a></td>
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/listagem.png"> <a href="/equipamentos/listagem">Listagem Equipamentos</a></td>
