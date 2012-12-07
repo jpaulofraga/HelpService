@@ -33,12 +33,6 @@
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/usuarios.png"> <a href="/clientes">Cadastro Cliente</a></td>
-<<<<<<< HEAD
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="/assets/tecnico.png"> <a href="/tecnicos">Cadastro Técnico</a></td>
-=======
->>>>>>> 8a69cd2923a329de190eed3756f81ae6e1b94ce9
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a></td>
@@ -48,12 +42,6 @@
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/listagem.png"> <a href="/clientes/listagem">Listagem Clientes</a></td>
-<<<<<<< HEAD
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="/assets/listagem.png"> <a href="/tecnicos/listagem">Listagem Técnicos</a></td>
-=======
->>>>>>> 8a69cd2923a329de190eed3756f81ae6e1b94ce9
 				</tr>
 				<tr>
 					<td><img alt="imagem" src="/assets/listagem.png"> <a href="/equipamentos/listagem">Listagem Equipamentos</a></td>
