@@ -21,7 +21,7 @@
 		<td colspan="2">
 <br>
 <%= link_to 'Editar', edit_tecnico_path(@tecnico) %> |
-<%= link_to 'Listar Todos', tecnicos_path %>
+<%= link_to 'Voltar', tecnicos_path %>
  </td>
 	</tr>
 

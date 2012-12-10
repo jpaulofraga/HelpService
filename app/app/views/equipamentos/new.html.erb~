@@ -1,2 +1,5 @@
 <h3>:: Novo Equipamento ::</h3>
+
 <%= render 'form' %>
+
+<%= link_to 'Voltar', equipamentos_path %>

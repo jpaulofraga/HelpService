@@ -1,0 +1,2 @@
+<h3 style="margin:0;">:: Novo Cliente ::</h3><br />
+<%= render 'form' %>

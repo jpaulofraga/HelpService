@@ -20,7 +20,7 @@
 		
 		<!-- Div menu -->
 		<div id="menuContainer">
-			<p style="margin:0; margin-top:5px; font-weight:bold;"><a href="/">::Tela Inicial::</a></p>
+			<p style="margin:0; margin-top:10px; font-weight:bold;"><a href="/">::Tela Inicial::</a></p>
 			<p class="cabecalho_menu">Cliente</p>
 			<ul class="menu">
 				<li><a href="/clientes/new">Novo Cliente</a></li>

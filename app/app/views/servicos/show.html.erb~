@@ -33,7 +33,7 @@
 		<td colspan="2">
 <br>
 <%= link_to 'Editar', edit_servico_path(@servico) %> |
-<%= link_to 'Listar Todos', servicos_path %>
+<%= link_to 'Voltar', servicos_path %>
 	</tr>
 </table>
 </div>

@@ -26,7 +26,7 @@
 		<td colspan="2">
 <br>
 <%= link_to 'Editar', edit_cliente_path(@cliente) %> |
-<%= link_to 'Listar Todos', clientes_path %> </td>
+<%= link_to 'Voltar', clientes_path %> </td>
 	</tr>
 </table>
 

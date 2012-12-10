@@ -14,24 +14,24 @@
 <div id="divContainerConteudo">
   <table cellpadding=0 cellspacing=0 width="70%" align="center">
 	<tr>
-		<td align="right">ID:&nbsp;&nbsp;</td>
-		<td><%= f.text_field :id, :readonly => true %></td>
+		<td>ID:&nbsp;&nbsp;</td>
+		<td align="right"><%= f.text_field :id, :readonly => true %></td>
 	</tr>
 	<tr>
-		<td align="right">Descrição:&nbsp;&nbsp;</td>
-		<td><%= f.text_field :descricao %></td>
+		<td>Descrição:&nbsp;&nbsp;</td>
+		<td align="right"><%= f.text_field :descricao %></td>
 	</tr>
 	<tr>
-		<td align="right">Voltagem:&nbsp;&nbsp;</td>
-		<td><%= f.text_field :voltagem %></td>
+		<td>Voltagem:&nbsp;&nbsp;</td>
+		<td align="right"><%= f.text_field :voltagem %></td>
 	</tr>
 	<tr>
-		<td align="right">Modelo:&nbsp;&nbsp;</td>
-		<td><%= f.text_field :modelo %></td>
+		<td>Modelo:&nbsp;&nbsp;</td>
+		<td align="right"><%= f.text_field :modelo %></td>
 	</tr>
 	<tr>
-		<td align="right">Marca:&nbsp;&nbsp;</td>
-		<td><%= f.text_field :marca %></td>
+		<td>Marca:&nbsp;&nbsp;</td>
+		<td align="right"><%= f.text_field :marca %></td>
 	</tr>
 
 	<tr>

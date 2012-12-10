@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pt-br">
   <head>
-    
-	<title>Sistema HelpServie</title>
+    <meta charset="UTF-8">    
+    <title>Sistema HelpServie</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 	
   </head>
@@ -10,35 +10,51 @@
     
 	<!-- Div Principal -->
 	<div id="principal">
-	
+		
+		<!-- Div Topo -->
 		<div id="topo">
 			<h1>Sistema HelpService</h1>
 		</div>
 		
-		<div id="menu">
-			<br>
-			<br>
-			<h4>Menu</h4>
-			<nav>
-			<img alt="imagem" src="imagens/note_add.png"> <a href="/clientes">Cadastro Cliente</a> <br>
-				<img alt="imagem" src="imagens/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a> <br>
-				<img alt="imagem" src="imagens/table.png"> <a href="/servicos">Cadastro Serviço</a> <br>
-				<img alt="imagem" src="imagens/table.png"> <a href="www.google.com.br">Lista Cliente</a> <br>
-				<img alt="imagem" src="imagens/wrench.png"> <a href="www.google.com.br>Lista Equipamento</a> <br>
-				<img alt="imagem" src="imagens/wrench.png"> <a href="www.google.com.br">Lista Serviços</a> <br>
-			</nav>
-		
+		<!-- Div menu -->
+		<div id="menuContainer">
+			<p style="margin:0; text-weight:bold;"><a href="/">::Tela Inicial::</a></p>
+			<p class="cabecalho_menu">Cliente</p>
+			<ul class="menu">
+				<li><a href="/clientes/new">Novo Cliente</a></li>
+				<li><a href="/clientes/listagem">Listar Clientes</a></li>
+			</ul>
+
+			<p class="cabecalho_menu">Técnico</p>
+			<ul class="menu">
+				<li><a href="/tecnicos/new">Novo Técnico</a></li>
+				<li><a href="/tecnicos/listagem">Listar Técnicos</a></li>
+			</ul>
+
+			<p class="cabecalho_menu">Equipamento</p>
+			<ul class="menu">
+				<li><a href="/equipamentos/new">Novo Equipamento</a></li>
+				<li><a href="/equipamentos/listagem">Listar Equipamentos</a></li>
+			</ul>
+
+			<p class="cabecalho_menu">Serviço</p>
+			<ul class="menu">
+				<li><a href="/servicos/new">Novo Serviço</a></li>
+				<li><a href="/servicos/listagem">Listar Serviços</a></li>
+			</ul>
+				
 		</div>
 
 		<!-- Div Conte�do -->
-		<div id="conteudo">
-			<h2> Aqui vai o conteúdo do Sistema </h2>
+		<div id="divConteudo">
+			<img alt="imagem" src="imagens/inicio.jpg" height="300" width="400" style="margin-top:80px;">		
 		</div>
 	
 		<!-- Div Rodap� -->
 		<div id="rodape">
-			<h5>Trabalho G2 Programação WEB</h5>
+			<h5>Trabalho G2 Programação WEB - Ruby on Rails</h5>
 		</div>
+
 	</div>
 	
   </body>

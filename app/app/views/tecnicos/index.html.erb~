@@ -22,8 +22,5 @@
 
   </tr>
 <% end %>
-	<tr>
-    	<th colspan="4" align="right"> Total Registros:  <%= @tecnicos.count %> </th>
-  	</tr>
 </table>
 </div>

@@ -51,11 +51,6 @@ h1 {
 
 }
 
-h3 {
-		margin:0;
-		margin-left: 100px;	
-}
-
 #rodape { 
 		
 	width: 100%; 

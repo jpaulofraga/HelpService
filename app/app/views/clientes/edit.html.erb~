@@ -1,0 +1,2 @@
+<h3>Editando Cliente</h3>
+<%= render 'form' %>

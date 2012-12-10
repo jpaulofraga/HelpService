@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pt-br">
   <head>
-    
-	<title>Sistema HelpServie</title>
+    <meta charset="UTF-8">    
+    <title>Sistema HelpServie</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 	
   </head>
@@ -11,139 +10,52 @@
     
 	<!-- Div Principal -->
 	<div id="principal">
-	
+		
+		<!-- Div Topo -->
 		<div id="topo">
 			<h1>Sistema HelpService</h1>
 		</div>
 		
-		<div id="menu">
-			<br/>
-			<br/>
-			<br/>
-			<table cellpadding=0 cellspacing=0 >
-				<tr  bgcolor="E6F3FF">
-    				<td align="center">Menu</td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/home.jpg"> <a href="/">Home</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/usuarios.png"> <a href="/clientes">Cadastro Cliente</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/tecnico.png"> <a href="/tecnicos">Cadastro Técnico</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/table.png"> <a href="/servicos">Cadastro Serviço</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="/clientes/listagem">Listagem Clientes</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="/tecnicos/listagem">Listagem Técnicos</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="equipamentos/listagem">Listagem Equipamentos</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="servicos/listagem">Listagem Serviços</a></td>
-				</tr>
-			</table>
-		
+		<!-- Div menu -->
+		<div id="menuContainer">
+			<p style="margin:0; font-weight:bold;"><a href="/">::Tela Inicial::</a></p>
+			<p class="cabecalho_menu">Cliente</p>
+			<ul class="menu">
+				<li><a href="/clientes/new">Novo Cliente</a></li>
+				<li><a href="/clientes/listagem">Listar Clientes</a></li>
+			</ul>
+
+			<p class="cabecalho_menu">Técnico</p>
+			<ul class="menu">
+				<li><a href="/tecnicos/new">Novo Técnico</a></li>
+				<li><a href="/tecnicos/listagem">Listar Técnicos</a></li>
+			</ul>
+
+			<p class="cabecalho_menu">Equipamento</p>
+			<ul class="menu">
+				<li><a href="/equipamentos/new">Novo Equipamento</a></li>
+				<li><a href="/equipamentos/listagem">Listar Equipamentos</a></li>
+			</ul>
+
+			<p class="cabecalho_menu">Serviço</p>
+			<ul class="menu">
+				<li><a href="/servicos/new">Novo Serviço</a></li>
+				<li><a href="/servicos/listagem">Listar Serviços</a></li>
+			</ul>
+				
 		</div>
 
 		<!-- Div Conte�do -->
-		<div id="conteudo">
-			<div id="divCentralizada">
-				
-				<img alt="imagem" src="imagens/inicio.jpg" height="300" width="400">
-				
-			</div>
+		<div id="divConteudo">
+			<img alt="imagem" src="imagens/inicio.jpg" height="300" width="400" style="margin-top:80px;">		
 		</div>
 	
 		<!-- Div Rodap� -->
 		<div id="rodape">
 			<h5>Trabalho G2 Programação WEB - Ruby on Rails</h5>
 		</div>
-	</div>
-	
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html>
-  <head>
-    
-	<title>Sistema HelpServie</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-	
-  </head>
-  <body>
-    
-	<!-- Div Principal -->
-	<div id="principal">
-	
-		<div id="topo">
-			<h1>Sistema HelpService</h1>
-		</div>
-		
-		<div id="menu">
-			<br/>
-			<br/>
-			<br/>
-			<table cellpadding=0 cellspacing=0 >
-				<tr  bgcolor="E6F3FF">
-    				<td align="center">Menu</td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/home.jpg"> <a href="/">Home</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/usuarios.png"> <a href="/clientes">Cadastro Cliente</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/tecnico.png"> <a href="/tecnicos">Cadastro Técnico</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/book_add.png"> <a href="/equipamentos">Cadastro Equipamento</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/table.png"> <a href="/servicos">Cadastro Serviço</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="/clientes/listagem">Listagem Clientes</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="/tecnicos/listagem">Listagem Técnicos</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="equipamentos/listagem">Listagem Equipamentos</a></td>
-				</tr>
-				<tr>
-					<td><img alt="imagem" src="imagens/listagem.png"> <a href="servicos/listagem">Listagem Serviços</a></td>
-				</tr>
-			</table>
-		
-		</div>
 
-		<!-- Div Conte�do -->
-		<div id="conteudo">
-			<div id="divCentralizada">
-				
-				<img alt="imagem" src="imagens/inicio.jpg" height="300" width="400">
-				
-			</div>
-		</div>
-	
-		<!-- Div Rodap� -->
-		<div id="rodape">
-			<h5>Trabalho G2 Programação WEB - Ruby on Rails</h5>
-		</div>
 	</div>
 	
   </body>
 </html>
->>>>>>> 8a69cd2923a329de190eed3756f81ae6e1b94ce9
