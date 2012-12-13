@@ -3,4 +3,7 @@ class Servico < ActiveRecord::Base
   belongs_to :cliente, :foreign_key => "idCliente"
   belongs_to :equipamento, :foreign_key => "idEquipamento"
   belongs_to :tecnico, :foreign_key => "idTecnico"
+  
+  validates_presence_of :codServ, :dtEntrada, :dtEntrega
+  
 end
