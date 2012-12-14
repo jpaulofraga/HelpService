@@ -20,7 +20,7 @@
     <td>
     	<%= link_to 'Editar', edit_equipamento_path(equipamento) %> | 
     	<%= link_to 'Deletar', equipamento, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %> | 
-		<%= link_to 'Listar Serviços', equipamento_path(equipamento)+"/servicos"%>
+<%= link_to 'Listar Serviços', equipamento_path(equipamento)+"/servicos"%>
 
 	</td>
   </tr>

@@ -4,6 +4,6 @@ class Servico < ActiveRecord::Base
   belongs_to :equipamento, :foreign_key => "idEquipamento"
   belongs_to :tecnico, :foreign_key => "idTecnico"
   
-  validates_presence_of :codServ, :dtEntrada, :dtEntrega
+  validates_presence_of :codServ, :dtEntrada, :dtEntrega, :idCliente, :idEquipamento, :idTecnico
   
 end

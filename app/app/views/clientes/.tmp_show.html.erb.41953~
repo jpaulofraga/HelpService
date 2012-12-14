@@ -29,7 +29,6 @@
 	<tr>
 		<td colspan="2">
 <br>
-<a href="/clientes/new">Novo</a> |
 <%= link_to 'Editar', edit_cliente_path(@cliente) %> |
 <%= link_to 'Listar Todos', clientes_path %> </td>
 	</tr>

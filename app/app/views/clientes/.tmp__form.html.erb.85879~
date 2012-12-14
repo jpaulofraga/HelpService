@@ -5,8 +5,7 @@
 	
 	<% if @cliente.errors.any? %>
     
-      <h3>Atenção! Verifique os campos abaixo.</h3>
-	  
+      <h3>Atenção! Os campos abaixo devem ser preenchidos.</h3>
 	  <br>
   <% end %>
 	

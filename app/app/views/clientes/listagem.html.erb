@@ -21,6 +21,7 @@
     <!--	<%= link_to 'Listar', cliente %>	-->
     	<%= link_to 'Editar', edit_cliente_path(cliente) %> | 
     	<%= link_to 'Deletar', cliente, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
+		<%= link_to 'Listar Serviços', cliente_path(cliente)+"/servicos"%>
 	</td>
   </tr>
 <% end %>

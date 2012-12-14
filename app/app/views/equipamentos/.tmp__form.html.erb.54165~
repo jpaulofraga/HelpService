@@ -18,7 +18,7 @@
 	</tr>
 	<tr>
 		<td align="right">Voltagem:&nbsp;&nbsp;</td>
-		<td><%= f.text_field :voltagem, :maxlength=>"3", :onkeypress=>"return SomenteNumero(event)" %></td>
+		<td><%= f.text_field :voltagem %></td>
 	</tr>
 	<tr>
 		<td align="right">Modelo:&nbsp;&nbsp;</td>

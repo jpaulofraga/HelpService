@@ -31,7 +31,6 @@
 	<tr>
 		<td colspan="2">
 <br>
-<a href="/equipamentos/new">Novo</a> |
 <%= link_to 'Editar', edit_equipamento_path(@equipamento) %> |
 <%= link_to 'Listar Todos', equipamentos_path %>
 	</tr>

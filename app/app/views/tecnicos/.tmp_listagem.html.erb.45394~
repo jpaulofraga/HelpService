@@ -17,7 +17,7 @@
 		
 		<%= link_to 'Editar', edit_tecnico_path(tecnico) %> | 
     	<%= link_to 'Deletar', tecnico, :method => :delete, :data => { :confirm => 'Deseja Deletar o Registro?' } %>
-		<%= link_to 'Listar Serviços', tecnico_path(tecnico)+"/servicos"%>
+		
 	</td>
 
   </tr>

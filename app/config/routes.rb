@@ -7,12 +7,21 @@ App::Application.routes.draw do
   
   resources :servicos
   resources :tecnicos
+  resources :clientes
 
   resources :equipamentos do
 	resources :servicos
   end
 
-  resources :clientes
+  resources :clientes do
+  resources :servicos
+  end
+
+  resources :tecnicos do
+  resources :servicos
+  end
+
+  
   
   
 

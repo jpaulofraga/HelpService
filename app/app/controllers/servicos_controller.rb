@@ -2,11 +2,20 @@ class ServicosController < ApplicationController
   # GET /servicos
   # GET /servicos.json
   def index
+    
+    @servicos = Servico.all
+    
     if params[:equipamento_id]
-        @servicos = Servico.find_all_by_idEquipamento ( params[:equipamento_id] )
-    else
-		@servicos = Servico.all
-	end
+        @servicos = Servico.find_all_by_idEquipamento ( params[:equipamento_id] )		
+  end
+
+  if params[:cliente_id]
+        @servicos = Servico.find_all_by_idCliente ( params[:cliente_id] )
+  end
+  
+  if params[:tecnico_id]
+        @servicos = Servico.find_all_by_idTecnico ( params[:tecnico_id] )
+  end
 
     respond_to do |format|
       format.html # index.html.erb

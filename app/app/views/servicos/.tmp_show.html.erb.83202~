@@ -32,7 +32,6 @@
 	</tr>
 		<td colspan="2">
 <br>
-<a href="/servicos/new">Novo</a> |
 <%= link_to 'Editar', edit_servico_path(@servico) %> |
 <%= link_to 'Listar Todos', servicos_path %>
 	</tr>

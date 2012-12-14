@@ -1,0 +1,38 @@
+<%= form_for(@tecnico) do |f| %>
+  
+<div id="divContainerConteudo">
+	
+	<% if @tecnico.errors.any? %>
+		<h3>Atenção! Os campos abaixo devem ser preenchidos.</h3>
+	  	<br>
+    <% end %>
+	
+  <table cellpadding=0 cellspacing=0 width="70%" align="center">
+	<tr>
+		<td align="right">ID:&nbsp;&nbsp;</td>
+		<td> <%= f.text_field :id, :readonly => true %> </td>
+	</tr>
+	
+	<tr>
+		<td align="right">Nome:&nbsp;&nbsp;</td>
+		<td> <%= f.text_field :nome %> </td>
+	</tr>
+	
+	<tr>
+		<td align="right">Registro:&nbsp;&nbsp;</td>
+		<td> <%= f.text_field :registro %> </td>
+	</tr>
+
+	<tr>
+		<td colspan="2" align="right">
+  			<div class="actions">
+			<br/>
+   			 <%= f.submit %>
+ 			</div>
+		</td>
+	</tr>
+  	
+  </table>
+
+</div>
+<% end %>

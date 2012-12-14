@@ -14,6 +14,34 @@
 //= require jquery_ujs
 //= require_tree .
 
+// Garante que o campos aceite somente números
+function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;   
+    if((tecla>47 && tecla<58)) return true;
+    else{
+    	if (tecla==8 || tecla==0) return true;
+	else  return false;
+    }
+}
+
+// Validação das datas de entrada e entrega no cadastro do serviço
+function ValidaDatas(dtEntrada, dtEntrega){
+
+    var data_1 = dtEntrada;
+    var data_2 = dtEntrega;
+    var Compara01 = parseInt(data_1.split("/")[2].toString() + data_1.split("/")[1].toString() + data_1.split("/")[0].toString());
+    var Compara02 = parseInt(data_2.split("/")[2].toString() + data_2.split("/")[1].toString() + data_2.split("/")[0].toString());
+ 
+    if (Compara01 > Compara02) {
+        alert("Atenção! A Data de Entrega não pode ser maior que a Data de Entrada.");
+		return false;
+    }
+    else {
+          return true;
+    }
+	
+}
+
 function barra(objeto){
 	if (objeto.value.length == 2 || objeto.value.length == 5 ){
 				objeto.value = objeto.value+"/";
